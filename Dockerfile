@@ -12,7 +12,7 @@ RUN chown -R pmmp:pmmp /opt/pmmp
 
 USER pmmp:pmmp
 
-RUN cd /opt/pmmp && wget -q -O - https://get.pmmp.io | bash -s -
+RUN cd /opt/pmmp && wget -q -O - https://raw.githubusercontent.com/pmmp/php-build-scripts/master/installer.sh | bash -s -
 
 VOLUME /opt/pmmp
 WORKDIR /opt/pmmp
